@@ -1,15 +1,19 @@
 body {
-  font-family: Helvetica;
+	font-family: 'Markazi Text', serif;
 }
 .app {
 	display: flex;
+	padding: 20px;
   	height: 100vh;
-  	background-color:#D6C1B1;
+  	// background-color:#78DBEE;
+  	font-weight: 700;
+  	color: #FF1B1C
 }
 ///////////////
-///chats
+///channel scene
 .left-scene{
 	flex: 50%;
+	    margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	background-color: pink;
@@ -27,8 +31,18 @@ body {
 	      box-shadow: none;
 	    }
 	}
+}
+
+/////////////////////////////////////////
+///Chat scene
+.right-scene {
+	flex: 0 0 50%;
+	background-color: #EDDEA4;
+	    margin-left: 10px;
+}
 	// to dispaly a magnifying glass on the left of the input
-	&:before {
+
+	.MagGlass {
 	    content: '\F002';
 	    position: absolute;
 	    top: 40px;
@@ -36,11 +50,14 @@ body {
 	    font-family: FontAwesome;
 	    font-size: 2em;
 	    opacity: 0.4;
+
+	      &:before {
+    content: '\F002';
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-family: FontAwesome;
+    font-size: 2em;
+    opacity: 0.4;
+  }
 	}
-}
-/////////////////////////////////////////
-///Channel scene
-.right-scene {
-	flex: 0 0 50%;
-	background-color: #EDDEA4;
-}
