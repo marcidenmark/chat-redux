@@ -24,9 +24,17 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise));
 
 // render an instance of the component in the DOM
+const root = document.getElementById('root');
 ReactDOM.render(
-  <Provider store={createStore(reducers, {}, middlewares)}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+	<Provider store={createStore(reducers, {}, middlewares )}>
+		<App />
+	</Provider>,
+root);
+
+
+// ReactDOM.render(
+//   <Provider store={createStore(reducers, {}, middlewares)}>
+//     <App />
+//   </Provider>,
+//   document.getElementById('root')
+// );
