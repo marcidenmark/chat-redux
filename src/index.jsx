@@ -16,12 +16,12 @@ import '../assets/stylesheets/application.scss';
 //import each reducer from './reducers/reducer_name';
 
 // State and reducers
-// const reducers = combineReducers({
-//   changeMe: (state = null, action) => state
-// });
+const reducers = combineReducers({
+  changeMe: (state = null, action) => state
+});
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise));
+const middlewares = composeEnhancers(applyMiddleware(reduxPromise, logger));
 
 // render an instance of the component in the DOM
 const root = document.getElementById('root');
