@@ -15,7 +15,7 @@ class App extends Component {
 	render () {
 		return (
 			<div className="app">
-				<h2> ChatApp</h2>
+				<h2> ChatApp </h2>
 				<ChannelList />
 			<div className="right-scene">
 				<MessageList />
