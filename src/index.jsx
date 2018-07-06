@@ -9,7 +9,7 @@ import reduxPromise from 'redux-promise';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 //Marci, do to:
-//import each reducer from './reducers/reducer_name';
+import messagesReducer from './reducers/messages_reducer';
 //import each reducer from './reducers/reducer_name';
 //import each reducer from './reducers/reducer_name';
 //import each reducer from './reducers/reducer_name';
@@ -17,7 +17,8 @@ import '../assets/stylesheets/application.scss';
 
 // State and reducers
 const reducers = combineReducers({
-  changeMe: (state = null, action) => state
+  // changeMe: (state = null, action) => state
+  messages: messagesReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -13,7 +13,7 @@ body {
 ///channel scene
 .left-scene{
 	flex: 50%;
-	    margin-left: 10px;
+	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	background-color: pink;
@@ -30,6 +30,9 @@ body {
 	    &:focus {
 	      box-shadow: none;
 	    }
+	}
+	.channel-list {
+		color: black;
 	}
 }
 
