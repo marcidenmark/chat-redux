@@ -6,7 +6,7 @@ class Message extends Component {
 	render() {
 		return (
 			<div>
-				<p>message to go here.</p>
+
 			</div>
 		)
 	}
