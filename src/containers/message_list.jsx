@@ -5,6 +5,10 @@ import { connect } from 'react-redux';
 import Message from '../components/message';
 import { setMessages } from '../actions';
 
+//monday afternoon july 9
+import MessageInput from '../containers/message_input';
+import { createMessage  } from '../actions';
+
 class MessageList extends Component {
 	componentWillMount() {
 		this.props.setMessages();

@@ -1,6 +1,4 @@
-// TODO: add and export your own actions
-import messages from '../messages';
-//fake db. will change to fetch? later.
+// import messages from '../messages'; -- this isn't needed.
 //
 export function setMessages() {
 	const promise = fetch('https://wagon-chat.herokuapp.com/general/messages')
@@ -10,6 +8,26 @@ export function setMessages() {
 		payload: promise
 	};
 }
+
+export function createMessage(channel, author, content) {
+	const body = { key: author, key2: content};
+	const promise = fetch(url, {
+		method: 'POST',
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(body)})
+		.then(r => r.json());
+
+	return {
+		type: 'CREATED_MESSAGE',
+		payload: promise
+	};
+}
+
+
+
 
 // export function xxxx() {
 // 	return {
