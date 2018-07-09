@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 
 class Message extends Component {
 	render() {
-		return
-		(
+		return (
 			<div>
-					message to go here.
-				</div>
+				<p>message to go here.</p>
+			</div>
 		)
 	}
 }
+
+export default Message

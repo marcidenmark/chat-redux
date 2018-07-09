@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ChannelList from '../containers/channel_list';
 import MessageList from '../containers/message_list';
 import MessageInput from '../containers/message_input';
+import Message from '../components/message';
 
 // const App = () => {
 //   return (
@@ -19,6 +20,7 @@ class App extends Component {
 				<ChannelList />
 			<div className="right-scene">
 				<MessageList />
+				<Message />
 				<MessageInput />
 			</div>
 			</div>
