@@ -10,9 +10,15 @@ body {
 	font-weight: 700;
 }
 
-.author-message {
+.content {
 	font-weight: 300;
 	border-bottom: 1px solid #rrggbb;
+}
+
+.created-at {
+	font-weight:100;
+	font-style:italic;
+	font-size: smaller;
 }
 
 // .author:after {
@@ -24,11 +30,7 @@ body {
 .bold {
 	font-weight: 700;
 }
-.lite {
-	font-weight:100;
-	font-style:italic;
-	font-size: smaller;
-}
+
 
 .app {
 	display: flex;

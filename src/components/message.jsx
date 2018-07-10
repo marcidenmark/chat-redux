@@ -7,9 +7,9 @@ class Message extends Component {
 		return (
 			<div>
 				<div className="author">Author 1 Name
-				<span className="lite"> time </span>
+				<span className="created-at"> time </span>
 				</div>
-				<div className="author-message">Author's message text will be here.</div>
+				<div className="content">Author's message text will be here.</div>
 
 
 			</div>
