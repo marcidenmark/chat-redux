@@ -7,7 +7,7 @@ class ChannelList extends Component {
 	render () {
 		return (
 			<div className="left-scene">
-			<h4>The list of channels will go here.</h4>
+			<h4>Channels</h4>
 			</div>
 			)
 	}

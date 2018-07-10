@@ -23,7 +23,7 @@ class MessageInput extends Component {
 		return (
 			<form onSubmit={this.handleSubmit}>
 				<label>
-					Name:
+					<h5>Type your message here <br /></h5>
 					<input type="text" value={this.state.value} onChange={this.handleChange} />
 
 				</label>

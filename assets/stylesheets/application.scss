@@ -1,22 +1,36 @@
 body {
-	font-family: 'Markazi Text', serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300 !important;
 }
+
+// h6 {
+// 	font-weight: 700;
+// }
+
+
 .app {
 	display: flex;
-	padding: 20px;
+	padding: 10px;
   	height: 100vh;
-  	// background-color:#78DBEE;
-  	font-weight: 700;
-  	color: #FF1B1C
+  	background-color:#E7E5DF;
+  	h2 {
+  		margin-top: 10px;
+  	}
 }
+// .underline {
+// 	border-bottom: 1px;
+// }
 ///////////////
 ///channel scene
 .left-scene{
 	flex: 50%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+	padding: 5px;
 	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	background-color: pink;
+	border-radius: 3px;
 
 	//component form-search will be the input
 	//  //form-control style comes from bootstrap
@@ -32,7 +46,6 @@ body {
 	    }
 	}
 	.channel-list {
-		color: black;
 	}
 }
 
@@ -40,20 +53,13 @@ body {
 ///Chat scene
 .right-scene {
 	flex: 0 0 50%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 	background-color: #EDDEA4;
-	    margin-left: 10px;
+	margin-left: 10px;
+	padding: 5px;
 }
 
-.name {
-	color:green;
 
-}
-.time {
-	color: gray;
-}
-.text {
-	color: black;
-}
 	// to dispaly a magnifying glass on the left of the input
 
 	.MagGlass {

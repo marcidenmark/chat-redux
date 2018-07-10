@@ -6,6 +6,7 @@ class Message extends Component {
 	render() {
 		return (
 			<div>
+			<h6> fjkdsæafjadsæ</h6>
 
 			</div>
 		)
