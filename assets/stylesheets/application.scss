@@ -6,6 +6,21 @@ body {
 // h6 {
 // 	font-weight: 700;
 // }
+.author {
+	font-weight: 700;
+}
+
+.author-message {
+	font-weight: 300;
+	border-bottom: 1px solid #rrggbb;
+}
+
+// .author:after {
+//     content: " ";
+//     display: block;
+//     border-bottom: 1px solid #rrggbb;
+//   }
+
 .bold {
 	font-weight: 700;
 }
@@ -26,6 +41,7 @@ body {
 }
 .underline {
 	border-bottom: 1px;
+	border-color: pink;
 }
 ///////////////
 ///channel scene
