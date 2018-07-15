@@ -1,6 +1,6 @@
 // import { SET_MESSAGES, CREATED_MESSAGE, CHANNEL_SELECTED } from '../actions';
 
-export default function(state, action) {
+export default function(state = null, action) {
 	if (state === null) {
 		return [];
 	}
