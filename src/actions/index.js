@@ -1,17 +1,22 @@
 // import messages from '../messages'; -- this isn't needed.
 //
-export function setMessages() {
-	const promise = fetch('https://wagon-chat.herokuapp.com/general/messages')
+const BASE_URL = 'https://wagon-chat.herokuapp.com';
+
+//(FETCH MESSAGE)
+export function setMessages(channel) {
+	const url = `${BASE_URL}/{channel}/messages`;
+
+	const messages = fetch('url')
 	.then(response => response.json());
 	return {
 		type: 'SET_MESSAGES',
-		payload: promise
+		payload: messages
 	};
 }
 
 export function createMessage(channel, author, content) {
-	const body = { key: author, key2: content};
-	const promise = fetch(url, {
+	const body = { channel,  author, content};
+	const message = fetch(url, {
 		method: 'POST',
 		headers: {
 			'Accept': 'application/json',
@@ -22,10 +27,16 @@ export function createMessage(channel, author, content) {
 
 	return {
 		type: 'CREATED_MESSAGE',
-		payload: promise
+		payload: message,
 	};
 }
 
+export function selectChannel(channel) {
+	return {
+		type: 'CHANNEL_SELECTED',
+		payload: channel
+	};
+}
 
 
 
