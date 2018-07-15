@@ -14,3 +14,4 @@ export default function(state, action) {
 		}
 	}
 }
+/// (case is the type in the action)
