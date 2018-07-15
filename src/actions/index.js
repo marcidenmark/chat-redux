@@ -38,6 +38,13 @@ export function selectChannel(channel) {
 	};
 }
 
+export function creatUser(user) {
+	return {
+		type: 'CREATED_USER',
+		payload: user
+	};
+}
+
 
 
 // export function xxxx() {
